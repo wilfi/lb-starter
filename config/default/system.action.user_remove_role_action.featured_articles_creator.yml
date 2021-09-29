@@ -1,0 +1,14 @@
+uuid: 70bcba6b-cf9c-4a59-af56-20f028bcc886
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.featured_articles_creator
+  module:
+    - user
+id: user_remove_role_action.featured_articles_creator
+label: 'Remove the Featured Articles creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: featured_articles_creator

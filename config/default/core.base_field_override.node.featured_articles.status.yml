@@ -1,0 +1,22 @@
+uuid: da8d0c9b-86cf-45d9-add7-cce249456e73
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.featured_articles
+id: node.featured_articles.status
+field_name: status
+entity_type: node
+bundle: featured_articles
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

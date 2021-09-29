@@ -1,0 +1,46 @@
+uuid: 9d39babf-7471-4469-b55e-3da57de20bd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.featured_articles.body
+    - field.field.node.featured_articles.field_cta
+    - field.field.node.featured_articles.field_flex_class
+    - node.type.featured_articles
+  module:
+    - d9dev
+    - text
+    - user
+id: node.featured_articles.teaser
+targetEntityType: node
+bundle: featured_articles
+mode: teaser
+content:
+  body:
+    label: visually_hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+    region: content
+  field_cta:
+    type: d9dev_featuredarticlescta
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_flex_class:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  links: true
+  search_api_excerpt: true

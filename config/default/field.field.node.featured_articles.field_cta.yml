@@ -1,0 +1,23 @@
+uuid: 36ce8a12-c5bc-48c7-9a6a-6cfa625518bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cta
+    - node.type.featured_articles
+  module:
+    - link
+id: node.featured_articles.field_cta
+field_name: field_cta
+entity_type: node
+bundle: featured_articles
+label: CTA
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

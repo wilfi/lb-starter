@@ -1,0 +1,29 @@
+uuid: 2eb716dd-eb77-4017-981d-2d7c6d31aac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flex_class
+    - node.type.featured_articles
+    - taxonomy.vocabulary.flex_class
+id: node.featured_articles.field_flex_class
+field_name: field_flex_class
+entity_type: node
+bundle: featured_articles
+label: 'Flex class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      flex_class: flex_class
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

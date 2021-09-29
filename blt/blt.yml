@@ -1,2 +1,4 @@
 project:
   machine_name: d9dev
+  profile:
+    name: 'lightning'

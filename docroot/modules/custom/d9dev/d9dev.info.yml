@@ -1,0 +1,5 @@
+name: d9dev
+type: module
+description: 'Custom module'
+package: Custom
+core_version_requirement: ^8.9 || ^9

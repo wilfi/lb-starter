@@ -1,0 +1,27 @@
+# Main theme library.
+global:
+  js:
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js': { type: external }
+#    'https://cdn.startbootstrap.com/sb-forms-latest.js': { type: external }
+    js/start-bootstrap.js: {}
+  css:
+    base:
+      css/base/elements.css: {}
+    component:
+      css/components/block.css: {}
+      css/components/breadcrumb.css: {}
+      css/components/field.css: {}
+      css/components/form.css: {}
+      css/components/header.css: {}
+      css/components/menu.css: {}
+      css/components/messages.css: {}
+      css/components/node.css: {}
+      css/components/sidebar.css: {}
+      css/components/table.css: {}
+      css/components/tabs.css: {}
+      css/components/buttons.css: {}
+    layout:
+      css/layouts/layout.css: {}
+    theme:
+      'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css': { type: external }
+      css/theme/print.css: { media: print }

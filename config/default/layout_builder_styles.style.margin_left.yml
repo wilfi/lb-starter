@@ -1,0 +1,11 @@
+uuid: 91b89584-ce6c-42d1-8ed9-2ad0b227167c
+langcode: en
+status: true
+dependencies: {  }
+id: margin_left
+label: Margin-left
+classes: margin-left
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

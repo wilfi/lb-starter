@@ -1,0 +1,25 @@
+uuid: 3bf12c35-e384-4f5d-943c-159b9f2e2a8d
+langcode: en
+status: true
+dependencies: {  }
+id: featured_articles_creator
+label: 'Featured Articles creator'
+weight: 7
+is_admin: false
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'configure any layout'
+  - 'create featured_articles content'
+  - 'create url aliases'
+  - 'edit own featured_articles content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view featured_articles revisions'
+  - 'view latest version'
+  - 'view own unpublished content'

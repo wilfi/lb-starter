@@ -1,0 +1,16 @@
+threecol_with_header:
+  label: '3 col with Header'
+  category: 'Columns: 3'
+  path: templates/layouts
+  template: threecol--with-header
+  library: layout_builder/threecol_section
+  icon: radix-geary.png
+  regions:
+    header:
+      label: Header
+    column1:
+      label: First Column
+    column2:
+      label: Second Column
+    column3:
+      label: Third Column

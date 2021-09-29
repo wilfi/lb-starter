@@ -1,0 +1,14 @@
+uuid: 089dcf96-2957-40d9-90f3-1743b65d0589
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.featured_articles_reviewer
+  module:
+    - user
+id: user_remove_role_action.featured_articles_reviewer
+label: 'Remove the Featured Articles reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: featured_articles_reviewer

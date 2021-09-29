@@ -1,0 +1,8 @@
+uuid: 0be33a34-4384-4381-9689-a1b2cafb9a9d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Flex Class'
+vid: flex_class
+description: 'The css class names for flex.'
+weight: 0

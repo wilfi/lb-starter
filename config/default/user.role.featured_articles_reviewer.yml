@@ -1,0 +1,19 @@
+uuid: 639c9fd0-9aa5-430c-a846-fd9ee427f30d
+langcode: en
+status: true
+dependencies: {  }
+id: featured_articles_reviewer
+label: 'Featured Articles reviewer'
+weight: 8
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'delete any featured_articles content'
+  - 'edit any featured_articles content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'view any unpublished content'
+  - 'view latest version'

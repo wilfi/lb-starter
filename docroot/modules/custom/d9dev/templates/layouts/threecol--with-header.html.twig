@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Template for Radix Geary.
+ *
+ * Variables:
+ * - $css_id: An optional CSS id to use for the layout.
+ * - $content: An array of content, each item in the array is keyed to one
+ * panel of the layout. This layout supports the following sections:
+ */
+#}
+{%
+  set classes = [
+  'layout',
+  'layout--threecol-section',
+  'layout--threecol-section--33-34-33',
+]
+%}
+<section {{ attributes.addClass(classes) }}>
+  <div class="container px-5 my-5">
+    {% if content %}
+
+      {% if content.header %}
+        <div {{ region_attributes.header.addClass('layout__region', 'layout__region--header') }}>
+          {{ content.header }}
+        </div>
+      {% endif %}
+      <div class="row gx-5 justify-content-center">
+{#        <div{{ attributes.addClass(classes) }}>#}
+
+          {% if content.column1 %}
+            <div {{ region_attributes.column1.addClass('layout__region', 'layout__region--first', 'col-lg-6', 'col-xl-4') }}>
+              {{ content.column1 }}
+            </div>
+          {% endif %}
+
+          {% if content.column2 %}
+            <div {{ region_attributes.column2.addClass('layout__region', 'layout__region--second', 'col-lg-6', 'col-xl-4') }}>
+              {{ content.column2 }}
+            </div>
+          {% endif %}
+
+          {% if content.column3 %}
+            <div {{ region_attributes.column3.addClass('layout__region', 'layout__region--third', 'col-lg-6', 'col-xl-4') }}>
+              {{ content.column3 }}
+            </div>
+          {% endif %}
+
+{#        </div>#}
+
+      </div>
+
+    {% endif %}
+
+
+  </div>
+</section>
+

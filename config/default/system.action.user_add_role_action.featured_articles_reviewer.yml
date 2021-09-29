@@ -1,0 +1,14 @@
+uuid: 26c646e1-24db-46a4-9382-8612e508d3d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.featured_articles_reviewer
+  module:
+    - user
+id: user_add_role_action.featured_articles_reviewer
+label: 'Add the Featured Articles reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: featured_articles_reviewer

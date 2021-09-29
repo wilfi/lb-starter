@@ -1,0 +1,14 @@
+uuid: 90c122f0-1fc1-41fd-a8d0-cf1ac992a568
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.featured_articles_creator
+  module:
+    - user
+id: user_add_role_action.featured_articles_creator
+label: 'Add the Featured Articles creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: featured_articles_creator

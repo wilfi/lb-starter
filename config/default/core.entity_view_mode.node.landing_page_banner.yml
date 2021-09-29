@@ -1,0 +1,14 @@
+uuid: e1457032-554e-4a95-9267-e3d6e8801b25
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: 'Banner for Landing page.'
+id: node.landing_page_banner
+label: 'Landing Page Banner'
+targetEntityType: node
+cache: true
