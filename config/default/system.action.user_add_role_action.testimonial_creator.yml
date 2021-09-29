@@ -1,0 +1,14 @@
+uuid: 65ef30c4-1e4a-4f30-a695-714c01843508
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.testimonial_creator
+  module:
+    - user
+id: user_add_role_action.testimonial_creator
+label: 'Add the Testimonial creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: testimonial_creator

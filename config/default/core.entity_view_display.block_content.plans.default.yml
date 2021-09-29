@@ -1,0 +1,58 @@
+uuid: c7d9b3e4-78b9-4dfd-8473-2af77fc336ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plans
+    - field.field.block_content.plans.body
+    - field.field.block_content.plans.field_is_star
+    - field.field.block_content.plans.field_link
+    - field.field.block_content.plans.field_price
+  module:
+    - link
+    - text
+id: block_content.plans.default
+targetEntityType: block_content
+bundle: plans
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_is_star:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_price:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  search_api_excerpt: true

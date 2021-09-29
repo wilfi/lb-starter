@@ -1,0 +1,8 @@
+uuid: 4a3d24e2-6fdc-4e66-ac5f-70a6f82dbc75
+langcode: en
+status: true
+dependencies: {  }
+id: plans
+label: Plans
+revision: 0
+description: ''

@@ -1,0 +1,23 @@
+uuid: 35c5f2f0-cf1c-4981-a142-435ad8f3c8b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plans
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.plans.field_link
+field_name: field_link
+entity_type: block_content
+bundle: plans
+label: CTA
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

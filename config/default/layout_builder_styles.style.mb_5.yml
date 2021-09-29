@@ -1,0 +1,11 @@
+uuid: 1b6cea8c-527e-44ac-a0c8-1a9ef2703af6
+langcode: en
+status: true
+dependencies: {  }
+id: mb_5
+label: mb-5
+classes: mb-5
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

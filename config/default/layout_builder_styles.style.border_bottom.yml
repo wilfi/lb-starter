@@ -1,0 +1,11 @@
+uuid: 98178b07-a6e8-4189-8519-d63338c6521b
+langcode: en
+status: true
+dependencies: {  }
+id: border_bottom
+label: border-bottom
+classes: border-bottom
+type: section
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

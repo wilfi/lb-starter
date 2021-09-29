@@ -1,0 +1,22 @@
+uuid: 13d1df17-184b-4448-b72d-dc69373d70aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.testimonial
+id: node.testimonial.status
+field_name: status
+entity_type: node
+bundle: testimonial
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

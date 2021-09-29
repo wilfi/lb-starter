@@ -1,0 +1,57 @@
+uuid: a0eb0f24-238c-421c-a49c-b5d8609c8f8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plans
+    - core.entity_view_mode.block_content.plans
+    - field.field.block_content.plans.body
+    - field.field.block_content.plans.field_is_star
+    - field.field.block_content.plans.field_link
+    - field.field.block_content.plans.field_price
+  module:
+    - d9dev
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.plans.plans
+targetEntityType: block_content
+bundle: plans
+mode: plans
+content:
+  body:
+    label: visually_hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_is_star:
+    type: boolean
+    weight: 3
+    region: content
+    label: visually_hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  field_link:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: d9dev_plancta
+    region: content
+  field_price:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: d9dev_pricedisplay
+    region: content
+hidden:
+  search_api_excerpt: true

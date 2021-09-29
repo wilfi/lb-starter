@@ -1,0 +1,23 @@
+uuid: 6a319815-9d30-4669-b598-2a94d6b35ee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plans
+    - field.storage.block_content.field_price
+id: block_content.plans.field_price
+field_name: field_price
+entity_type: block_content
+bundle: plans
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: $
+  suffix: /mo.
+field_type: integer

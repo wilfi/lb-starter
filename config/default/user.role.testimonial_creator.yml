@@ -1,0 +1,25 @@
+uuid: 5daee743-3bf1-4587-8bc2-90f9979ad18b
+langcode: en
+status: true
+dependencies: {  }
+id: testimonial_creator
+label: 'Testimonial creator'
+weight: 9
+is_admin: false
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'configure any layout'
+  - 'create testimonial content'
+  - 'create url aliases'
+  - 'edit own testimonial content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use moderation sidebar'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view testimonial revisions'

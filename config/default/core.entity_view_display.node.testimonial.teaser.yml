@@ -1,0 +1,45 @@
+uuid: 1f768d95-3dbf-4698-b611-5d7f424f6096
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_client_name
+    - field.field.node.testimonial.field_location
+    - node.type.testimonial
+  module:
+    - d9dev
+    - user
+id: node.testimonial.teaser
+targetEntityType: node
+bundle: testimonial
+mode: teaser
+content:
+  body:
+    label: visually_hidden
+    type: d9dev_testimonialteaser
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_client_name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_location:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  links: true
+  search_api_excerpt: true

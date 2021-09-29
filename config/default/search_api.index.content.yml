@@ -42,6 +42,7 @@ field_settings:
           featured_articles: default
           landing_page: full
           page: default
+          testimonial: default
   status:
     label: null
     datasource_id: 'entity:node'

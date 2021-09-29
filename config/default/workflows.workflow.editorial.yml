@@ -6,6 +6,7 @@ dependencies:
     - node.type.featured_articles
     - node.type.landing_page
     - node.type.page
+    - node.type.testimonial
   module:
     - content_moderation
 _core:
@@ -77,3 +78,4 @@ type_settings:
       - featured_articles
       - landing_page
       - page
+      - testimonial

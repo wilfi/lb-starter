@@ -1,0 +1,14 @@
+uuid: 5d87c480-b045-4dd3-921b-e59bc4d1c871
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: block_content.plans
+label: Plans
+targetEntityType: block_content
+cache: true

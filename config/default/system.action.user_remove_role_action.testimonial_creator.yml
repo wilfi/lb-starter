@@ -1,0 +1,14 @@
+uuid: 88328e95-1372-4e57-9667-211d2a136de1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.testimonial_creator
+  module:
+    - user
+id: user_remove_role_action.testimonial_creator
+label: 'Remove the Testimonial creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: testimonial_creator

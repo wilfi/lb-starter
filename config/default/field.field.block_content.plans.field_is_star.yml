@@ -1,0 +1,23 @@
+uuid: 0a0f41bd-29a2-4f8e-b096-513991712bb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plans
+    - field.storage.block_content.field_is_star
+id: block_content.plans.field_is_star
+field_name: field_is_star
+entity_type: block_content
+bundle: plans
+label: 'Is Star'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

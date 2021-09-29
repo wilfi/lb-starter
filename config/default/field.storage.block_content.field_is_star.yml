@@ -1,0 +1,18 @@
+uuid: 821302f5-8529-486a-8939-1c4f99b83ea8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_is_star
+field_name: field_is_star
+entity_type: block_content
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

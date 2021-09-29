@@ -1,0 +1,11 @@
+uuid: 281d2680-8d85-4d77-b228-e8eba75f7af0
+langcode: en
+status: true
+dependencies: {  }
+id: text_center
+label: text-center
+classes: text-center
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

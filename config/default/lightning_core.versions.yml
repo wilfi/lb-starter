@@ -10,6 +10,7 @@ config: 9.2.6
 conflict: 2.0.0-alpha2
 consumers: 1.11.0
 contact: 9.2.6
+contact_block: 1.5.0
 contact_storage: 1.1.0
 content_moderation: 9.2.6
 contextual: 9.2.6
@@ -116,4 +117,5 @@ toolbar: 9.2.6
 user: 9.2.6
 views: 9.2.6
 views_ui: 9.2.6
+webform: 6.0.5
 workflows: 9.2.6
