@@ -92,7 +92,11 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {}
+        "patches": {
+            "drupal/core": {
+                "Layout builder inline blocks": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch"
+            }
+        }
     },
     "repositories": {
         "drupal": {

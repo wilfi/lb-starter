@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "388448a6723745b426d3aac639cd6cdf",
+    "content-hash": "2e8b0a87e16a60341c26cad8bf29989d",
     "packages": [
         {
             "name": "acquia/blt",
@@ -6255,9 +6255,6 @@
                 "reference": "8.x-1.2",
                 "shasum": "a4c4f6a7846971f494ee7850132bfbe220ff8687"
             },
-            "require": {
-                "drupal/core": "~9.0.0-beta3 || 9.1.* || 9.2.*"
-            },
             "type": "library",
             "extra": {
                 "drupal": {
@@ -6685,6 +6682,10 @@
                 {
                     "name": "phenaproxima",
                     "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
                 }
             ],
             "description": "Provides a way to place blocks on a custom page.",
@@ -7620,8 +7621,8 @@
                     "role": "Contributors"
                 },
                 {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
+                    "name": "shadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
                 },
                 {
                     "name": "thalles",
