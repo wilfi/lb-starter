@@ -1,6 +1,6 @@
 local:
     root: /var/www/d9dev/docroot
-    uri: 'http://local.d9dev.com'
-    host: local.d9dev.com
+    uri: 'http://local.layoutbuilder.com'
+    host: local.layoutbuilder.com
     user: vagrant
     ssh: { options: '-o StrictHostKeyChecking=no -o PasswordAuthentication=no -i $HOME/.vagrant.d/insecure_private_key' }

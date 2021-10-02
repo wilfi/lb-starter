@@ -33,10 +33,12 @@
 ]
 %}
 <div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
   {% block content %}
     <div class="card mb-5 mb-xl-0">
       <div class="card-body p-5">
-        {% if content.field_is_star[0]['#markup'] %}
+        {% if content.field_is_star[0]['#markup'] == 'On' %}
           <div class="small text-uppercase fw-bold">
             <i class="bi bi-star-fill text-warning"></i>
             {{ title_prefix }}

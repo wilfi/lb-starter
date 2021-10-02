@@ -3,7 +3,7 @@
 # @see https://github.com/geerlingguy/drupal-vm/blob/master/default.config.yml
 
 # Update the hostname to the local development environment hostname.
-vagrant_hostname: local.d9dev.com
+vagrant_hostname: local.layoutbuilder.com
 vagrant_machine_name: d9dev
 
 # Set the IP address so it doesn't conflict with other Drupal VM instances.
@@ -100,4 +100,4 @@ solr_version: "4.5.1"
 
 post_provision_scripts:
   - "../../../acquia/blt-drupal-vm/scripts/drupal-vm/configure-solr.sh"
-  - "../../../acquia/blt-drupal-vm/scripts/drupal-vm/post-provision.php"
+  - "../../../acquia/blt-drupal-vm/scripts/drupal-vm/post-provision.sh"
