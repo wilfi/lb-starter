@@ -1,0 +1,11 @@
+uuid: 6c730d04-83e1-43f4-a80b-e58047778733
+langcode: en
+status: true
+dependencies: {  }
+id: bg_dark_block
+label: bg-dark
+classes: bg-dark
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

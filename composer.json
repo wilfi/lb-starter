@@ -94,7 +94,7 @@
         },
         "patches": {
             "drupal/core": {
-                "Layout builder inline blocks": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch"
+                "Error: Call to a member function getEntityTypeId() on null (Layout Builder) -3049332": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch"
             }
         }
     },

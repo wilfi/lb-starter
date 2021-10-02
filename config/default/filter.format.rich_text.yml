@@ -41,10 +41,10 @@ filters:
   filter_html:
     id: filter_html
     provider: filter
-    status: true
+    status: false
     weight: -50
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <br> <pre> <drupal-entity data-* title alt> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt><ul class><li class><i class>'
+      allowed_html: '<a class href hreflang aria-current> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <br> <pre> <drupal-entity data-* title alt> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt><ul class><li class><i class><div class id><nav class><button class type data-bs-toggle data-bs-target aria-controls aria-expanded aria-label><span class>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
@@ -79,8 +79,8 @@ filters:
     weight: -39
     settings:
       default_view_mode: embedded
-      allowed_view_modes: {  }
       allowed_media_types: {  }
+      allowed_view_modes: {  }
   blazy_filter:
     id: blazy_filter
     provider: blazy
@@ -91,7 +91,7 @@ filters:
         img: img
         iframe: iframe
       media_switch: ''
-      box_style: ''
       hybrid_style: ''
-      use_data_uri: '0'
+      box_style: ''
       box_caption: ''
+      use_data_uri: '0'

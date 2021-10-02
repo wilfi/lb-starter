@@ -21,7 +21,6 @@ module:
   ctools_views: 0
   d9dev: 0
   datetime: 0
-  dblog: 0
   diff: 0
   dropzonejs: 0
   editor: 0
@@ -40,7 +39,6 @@ module:
   jsonapi: 0
   layout_builder: 0
   layout_builder_component_attributes: 0
-  layout_builder_lock: 0
   layout_builder_modal: 0
   layout_builder_operation_link: 0
   layout_builder_perms: 0

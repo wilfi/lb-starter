@@ -1,0 +1,38 @@
+uuid: cba4e0ec-5361-4847-a0bf-551ce8aff5d0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:0d511a44-fa92-4532-a29e-ff12f2ef9a3d'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - start_bootstrap
+id: copyright
+theme: start_bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:0d511a44-fa92-4532-a29e-ff12f2ef9a3d'
+settings:
+  id: 'block_content:0d511a44-fa92-4532-a29e-ff12f2ef9a3d'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '*/layout'
+    negate: true

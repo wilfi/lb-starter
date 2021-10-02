@@ -4,7 +4,9 @@ threecol_with_header:
   path: templates/layouts
   template: threecol--with-header
   library: layout_builder/threecol_section
-  icon: radix-geary.png
+  icon_map:
+    - [top]
+    - [first, second, third]
   regions:
     header:
       label: Header

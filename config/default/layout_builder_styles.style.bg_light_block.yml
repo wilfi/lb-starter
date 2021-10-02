@@ -1,0 +1,11 @@
+uuid: 972e4bee-4582-4b71-837a-53e5043ed05a
+langcode: en
+status: true
+dependencies: {  }
+id: bg_light_block
+label: bg-light
+classes: bg-light
+type: component
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

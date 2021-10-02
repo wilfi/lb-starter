@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - block_content.type.text
-    - contact.form.sitewide
     - core.entity_view_mode.node.full
     - field.field.node.landing_page.body
     - field.field.node.landing_page.field_cta
@@ -21,7 +20,6 @@ dependencies:
     - 'block_content:plans:55d2d896-b014-49a6-9aa1-e990796c948e'
   module:
     - block_content
-    - contact_block
     - ctools
     - d9dev
     - layout_builder
@@ -42,8 +40,8 @@ third_party_settings:
           label: Banner
           context_mapping: {  }
           layout_builder_styles_style:
-            - bg_dark
             - py_5
+            - bg_dark
         components:
           18eef033-e53d-4127-8b33-adf03e91fa7d:
             uuid: 18eef033-e53d-4127-8b33-adf03e91fa7d
@@ -58,6 +56,7 @@ third_party_settings:
                 entity: layout_builder.entity
             additional:
               layout_builder_styles_style:
+                - bg_dark_block
                 - margin_left
             weight: 0
         third_party_settings:
@@ -99,36 +98,6 @@ third_party_settings:
             - border_bottom
             - py_5
         components:
-          483ad3e8-d9f0-416c-892c-d225f0010889:
-            uuid: 483ad3e8-d9f0-416c-892c-d225f0010889
-            region: column1
-            configuration:
-              id: 'block_content:15fefa75-19bb-44d1-8e88-82da999a596b'
-              label: FREE
-              provider: block_content
-              label_display: visible
-              status: true
-              info: ''
-              view_mode: plans
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style: {  }
-            weight: 1
-          d188938b-8eb3-4905-8704-fbea206c6536:
-            uuid: d188938b-8eb3-4905-8704-fbea206c6536
-            region: column2
-            configuration:
-              id: 'block_content:28729105-34c8-49ff-b5d2-8407a68c8933'
-              label: PRO
-              provider: block_content
-              label_display: visible
-              status: true
-              info: ''
-              view_mode: plans
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style: {  }
-            weight: 0
           b78f6d19-4f49-4634-b1d1-c3308d29fa9a:
             uuid: b78f6d19-4f49-4634-b1d1-c3308d29fa9a
             region: column3
@@ -160,6 +129,36 @@ third_party_settings:
               layout_builder_styles_style:
                 - mb_5
                 - text_center
+            weight: 0
+          483ad3e8-d9f0-416c-892c-d225f0010889:
+            uuid: 483ad3e8-d9f0-416c-892c-d225f0010889
+            region: column1
+            configuration:
+              id: 'block_content:15fefa75-19bb-44d1-8e88-82da999a596b'
+              label: FREE
+              provider: block_content
+              label_display: visible
+              status: true
+              info: ''
+              view_mode: plans
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 1
+          d188938b-8eb3-4905-8704-fbea206c6536:
+            uuid: d188938b-8eb3-4905-8704-fbea206c6536
+            region: column2
+            configuration:
+              id: 'block_content:28729105-34c8-49ff-b5d2-8407a68c8933'
+              label: PRO
+              provider: block_content
+              label_display: visible
+              status: true
+              info: ''
+              view_mode: plans
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
             weight: 0
         third_party_settings:
           layout_builder_lock:
@@ -199,55 +198,10 @@ third_party_settings:
               provider: views
               label_display: '0'
               views_label: ''
-              items_per_page: '2'
+              items_per_page: '1'
               context_mapping: {  }
             additional:
               layout_builder_styles_style: {  }
-            weight: 1
-        third_party_settings:
-          layout_builder_lock:
-            lock: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: Contact
-          context_mapping: {  }
-          layout_builder_styles_style:
-            - bg_light
-            - border_bottom
-            - py_5
-        components:
-          86512ab0-c851-402b-81df-af4c8feb2c88:
-            uuid: 86512ab0-c851-402b-81df-af4c8feb2c88
-            region: content
-            configuration:
-              id: 'inline_block:text'
-              label: 'Get in touch'
-              provider: layout_builder
-              label_display: visible
-              view_mode: contact_us
-              block_revision_id: 6
-              block_serialized: null
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style:
-                - mb_5
-                - text_center
-            weight: 0
-          24e4af79-4256-405a-8bdb-561f2482cdb4:
-            uuid: 24e4af79-4256-405a-8bdb-561f2482cdb4
-            region: content
-            configuration:
-              id: contact_block
-              label: 'Contact block'
-              provider: contact_block
-              label_display: visible
-              contact_form: sitewide
-              context_mapping: {  }
-            additional:
-              layout_builder_styles_style:
-                - mb_5
-                - text_center
             weight: 1
         third_party_settings:
           layout_builder_lock:
@@ -256,7 +210,26 @@ third_party_settings:
     enable: true
   layout_builder_restrictions:
     entity_view_mode_restriction:
-      whitelisted_blocks: {  }
+      whitelisted_blocks:
+        'Custom block types':
+          - plans
+          - text
+        'Custom blocks':
+          - 'block_content:0d511a44-fa92-4532-a29e-ff12f2ef9a3d'
+          - 'block_content:55d2d896-b014-49a6-9aa1-e990796c948e'
+          - 'block_content:15fefa75-19bb-44d1-8e88-82da999a596b'
+          - 'block_content:5f63971a-f917-44cf-9f90-7965fa5bbcad'
+          - 'block_content:28729105-34c8-49ff-b5d2-8407a68c8933'
+        'Entity Block':
+          - 'entity_block:node'
+          - 'entity_block:media'
+          - 'entity_block:taxonomy_term'
+        'Inline blocks':
+          - 'inline_block:plans'
+          - 'inline_block:text'
+        'Lists (Views)':
+          - 'views_block:featured_articles-block_1'
+          - 'views_block:testimonials-block_1'
       allowed_layouts:
         - layout_onecol
         - threecol_with_header
@@ -264,7 +237,18 @@ third_party_settings:
         - layout_threecol_section
         - layout_fourcol_section
       blacklisted_blocks: {  }
-      restricted_categories: {  }
+      restricted_categories:
+        - '@entity'
+        - 'Content fields'
+        - 'Entity Browser'
+        - Forms
+        - Help
+        - Menus
+        - 'Moderation Dashboard'
+        - System
+        - User
+        - Views
+        - core
     allowed_block_categories: {  }
 _core:
   default_config_hash: d83Jic-g8eE88n6hk6kgqfzNI0Y-gEnPXKI5qed2hc0

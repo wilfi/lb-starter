@@ -1,0 +1,38 @@
+uuid: deb38492-bee9-4657-9feb-15ed9107ebd0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:5f63971a-f917-44cf-9f90-7965fa5bbcad'
+  module:
+    - block_content
+    - ctools
+    - system
+  theme:
+    - start_bootstrap
+id: navbar
+theme: start_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:5f63971a-f917-44cf-9f90-7965fa5bbcad'
+settings:
+  id: 'block_content:5f63971a-f917-44cf-9f90-7965fa5bbcad'
+  label: Navbar
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '*/layout'
+    negate: true
