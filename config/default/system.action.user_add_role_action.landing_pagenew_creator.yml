@@ -1,0 +1,14 @@
+uuid: 6be41446-64b9-4d80-8273-f6eade84f7d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.landing_pagenew_creator
+  module:
+    - user
+id: user_add_role_action.landing_pagenew_creator
+label: 'Add the Landing pagenew creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: landing_pagenew_creator

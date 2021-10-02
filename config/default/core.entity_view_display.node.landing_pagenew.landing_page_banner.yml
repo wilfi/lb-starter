@@ -1,0 +1,56 @@
+uuid: 526d011b-d636-4e2a-89b8-aadb96699f37
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.landing_page_banner
+    - field.field.node.landing_pagenew.body
+    - field.field.node.landing_pagenew.field_cta
+    - field.field.node.landing_pagenew.field_learn_more
+    - field.field.node.landing_pagenew.layout_builder__layout
+    - field.field.node.landing_pagenew.layout_selection
+    - node.type.landing_pagenew
+  module:
+    - d9dev
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.landing_pagenew.landing_page_banner
+targetEntityType: node
+bundle: landing_pagenew
+mode: landing_page_banner
+content:
+  body:
+    label: visually_hidden
+    type: d9dev_landingpage_description
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cta:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: d9dev_landingpage_banner
+    region: content
+  field_learn_more:
+    weight: 3
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: d9dev_landingpage_learnmore
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  layout_builder__layout: true
+  layout_selection: true
+  search_api_excerpt: true

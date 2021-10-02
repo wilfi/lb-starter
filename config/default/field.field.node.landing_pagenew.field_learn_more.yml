@@ -1,0 +1,23 @@
+uuid: 35a515a3-7de3-43a1-beb8-a5e8a8b07787
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_learn_more
+    - node.type.landing_pagenew
+  module:
+    - link
+id: node.landing_pagenew.field_learn_more
+field_name: field_learn_more
+entity_type: node
+bundle: landing_pagenew
+label: 'Learn More'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.featured_articles
-    - node.type.landing_page
+    - node.type.landing_pagenew
     - node.type.page
     - node.type.testimonial
   module:
@@ -76,6 +76,6 @@ type_settings:
   entity_types:
     node:
       - featured_articles
-      - landing_page
+      - landing_pagenew
       - page
       - testimonial

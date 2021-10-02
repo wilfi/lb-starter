@@ -1,0 +1,78 @@
+uuid: 985b7cc8-7c22-4a78-87c7-96f6e9814bb1
+langcode: en
+status: true
+dependencies: {  }
+id: lpnew
+label: lpnew
+targetEntityType: node
+targetBundle: landing_pagenew
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        - bg_dark
+        - py_5
+      context_mapping: {  }
+    components:
+      5b4cb6a4-8b31-4991-a064-1731bc8f7468:
+        uuid: 5b4cb6a4-8b31-4991-a064-1731bc8f7468
+        region: content
+        configuration:
+          id: 'entity_view:node'
+          label: 'Entity view (Content)'
+          provider: ctools
+          label_display: '0'
+          view_mode: landing_page_banner
+          context_mapping:
+            entity: layout_builder.entity
+        additional:
+          layout_builder_styles_style:
+            - bg_dark_block
+            - margin_left
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: 'Featured Articles'
+      layout_builder_styles_style: {  }
+      context_mapping: {  }
+    components:
+      1d784fd7-6d6b-46b8-896a-a9886dd2eda6:
+        uuid: 1d784fd7-6d6b-46b8-896a-a9886dd2eda6
+        region: content
+        configuration:
+          id: 'views_block:featured_articles-block_1'
+          label: ''
+          provider: views
+          label_display: '0'
+          views_label: ''
+          items_per_page: '3'
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style: {  }
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: Contact
+      layout_builder_styles_style: {  }
+      context_mapping: {  }
+    components:
+      9a465c0a-2d7e-486e-a51f-0f26e63312f4:
+        uuid: 9a465c0a-2d7e-486e-a51f-0f26e63312f4
+        region: content
+        configuration:
+          id: contact_block
+          label: 'Contact block'
+          provider: contact_block
+          label_display: '0'
+          contact_form: sitewide
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style: {  }
+        weight: 0
+    third_party_settings: {  }

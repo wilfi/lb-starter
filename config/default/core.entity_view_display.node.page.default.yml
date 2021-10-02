@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_cta
     - field.field.node.page.field_meta_tags
     - field.field.node.page.layout_selection
     - node.type.page
   module:
     - layout_builder
     - layout_library
+    - link
     - metatag
     - text
     - user
@@ -32,6 +34,18 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_cta:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_meta_tags:
     type: metatag_empty_formatter

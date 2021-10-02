@@ -5,10 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_cta
     - field.field.node.page.field_meta_tags
     - field.field.node.page.layout_selection
     - node.type.page
   module:
+    - d9dev
     - text
     - user
 _core:
@@ -21,15 +23,25 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 100
+    weight: 0
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 101
+  field_cta:
+    type: d9dev_landingpage_banner
+    weight: 1
     region: content
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  content_moderation_control: true
   field_meta_tags: true
   layout_selection: true
   search_api_excerpt: true

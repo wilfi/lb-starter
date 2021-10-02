@@ -1,0 +1,109 @@
+uuid: abf44700-ff47-4b45-a6d0-89c0d69eac10
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.body
+    - field.field.node.page.field_cta
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.layout_selection
+    - node.type.page
+  module:
+    - ctools
+    - layout_builder
+    - layout_discovery
+    - layout_library
+    - link
+    - metatag
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          85edded5-75e7-4f60-9d06-b32a1ddcd3a6:
+            uuid: 85edded5-75e7-4f60-9d06-b32a1ddcd3a6
+            region: content
+            configuration:
+              id: 'entity_view:node'
+              label: 'Entity view (Content)'
+              provider: ctools
+              label_display: '0'
+              view_mode: teaser
+              context_mapping:
+                entity: layout_builder.entity
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 0
+          694034bb-082f-4e9b-b82c-85a08c0706d6:
+            uuid: 694034bb-082f-4e9b-b82c-85a08c0706d6
+            region: content
+            configuration:
+              id: 'field_block:node:page:uid'
+              label: 'Authored by'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              layout_builder_styles_style: {  }
+            weight: 1
+        third_party_settings: {  }
+  layout_library:
+    enable: true
+_core:
+  default_config_hash: Kfxnq5Imio9VFBoNa_PIkzXoTmjz_T-EY3mOrwDTddU
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cta:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    region: content
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  layout_selection: true
+  search_api_excerpt: true

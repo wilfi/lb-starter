@@ -1,0 +1,14 @@
+uuid: 8efd0b4a-39e9-437d-9a3e-6f2175c558c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.landing_pagenew_creator
+  module:
+    - user
+id: user_remove_role_action.landing_pagenew_creator
+label: 'Remove the Landing pagenew creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: landing_pagenew_creator

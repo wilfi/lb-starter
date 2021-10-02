@@ -7,7 +7,6 @@ dependencies:
     - search_api
   config:
     - search_api.server.database
-    - core.entity_view_mode.node.full
 _core:
   default_config_hash: qEX0c8Yf878jYMC-3TrFlGSSNQeGbl3u0Hs6GJfxA38
 id: content
@@ -40,7 +39,7 @@ field_settings:
       view_mode:
         'entity:node':
           featured_articles: default
-          landing_page: full
+          landing_pagenew: default
           page: default
           testimonial: default
   status:

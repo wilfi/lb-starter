@@ -95,6 +95,9 @@
         "patches": {
             "drupal/core": {
                 "Error: Call to a member function getEntityTypeId() on null (Layout Builder) -3049332": "https://www.drupal.org/files/issues/2021-03-19/3049332-inline-56.patch"
+            },
+            "drupal/layout_library": {
+             "Dangling layout references in the layout selection field cause a type error on the entity detail page - 3122496": "https://www.drupal.org/files/issues/2020-03-26/entity-interface-3122496-5.patch"
             }
         }
     },
